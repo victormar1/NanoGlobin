@@ -1,0 +1,4 @@
+reference: data/reference/hg38.fa
+targets: data/reference/targets.bed   # positions des régions HBA, HBB, etc.
+threads: 8
+outdir: results

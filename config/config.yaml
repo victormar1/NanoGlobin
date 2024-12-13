@@ -1,4 +1,13 @@
-reference: data/reference/hg38.fa
-targets: data/reference/targets.bed   # positions des régions HBA, HBB, etc.
+reference: "data/reference/hg38.fa"
 threads: 8
-outdir: results
+outdir: "results"
+primers_file: "config/primers.tsv"
+variants_catalog: "config/variants_catalog.csv"
+targets_bed: "config/targets.bed"
+samples:
+    - data/raw/barcode01_0.01.bam
+
+
+# Paramètres spécifiques au pipeline
+min_mapq: 20
+min_depth: 100
